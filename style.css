@@ -16,10 +16,10 @@
 
 body {
     background-image: url("images/treee.png");
-    background-size: cover;
     /* there's no background-opacity property but this is a combo that works https://blog.jim-nielsen.com/2025/background-image-opacity-css/ */
-    background-color: rgba(255, 255, 255, 0.117);
+    background-color: rgba(255, 255, 255, 0.8);
     background-blend-mode: lighten;
+    background-size: 10%;
 }
 
 .graves {
