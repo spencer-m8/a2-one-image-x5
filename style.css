@@ -15,10 +15,16 @@
 }
 
 body {
-    background-image: url("images/treee.png");
+     --transparentImg: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7;
+    
+    background-image: url("images/treee.png")
+    cross-fade(
+        url(images/treee.png),
+        url(--transparentImg),
+        50%
+    );
     background-size: cover;
     /* there's no background-opacity property but this is a combo that works https://blog.jim-nielsen.com/2025/background-image-opacity-css/ */
-    background-color: blueviolet;
 }
 
 .graves {
