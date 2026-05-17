@@ -28,7 +28,6 @@ body {
     height: auto;
     content: url("images/graves.png");
     mix-blend-mode: exclusion;
-    filter: blur(5px);
     /* https://stackoverflow.com/questions/11516291/css-get-height-of-screen-resolution */
     content-visibility: visible;
     flex : 4;
