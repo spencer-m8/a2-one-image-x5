@@ -23,12 +23,47 @@ body {
     background-size: 100%;
 }
 
+@font-face {
+    font-family: Ballet;
+    src: url(Ballet/Ballet-Regular-VariableFont_opsz.ttf); 
+}
+
+
+.textoverlap {
+    display: grid;
+
+    span {
+        grid-area: 1 / 1;
+        justify-self: center;
+        translate: 2ch;
+        &:first-child {
+            translate: -2ch;
+        } 
+    }
+}
+
+.title {
+    font-family: Ballet;
+    font-size: 90px;
+    text-align: left;
+    padding-top: var(--padding);
+}
+
+.subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
+    color: rgb(214, 187, 187);
+    text-align: left;
+    padding-top: var(--padding);
+}
+
 .graves1 {
     width: 100%;
     height: auto;
     content: url("images/graves.png");
     mix-blend-mode: exclusion;
     /* https://stackoverflow.com/questions/11516291/css-get-height-of-screen-resolution */
+
     content-visibility: visible;
     flex : 4;
 }
