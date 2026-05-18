@@ -97,13 +97,26 @@ body {
     flex : 4;
 }
 
+.gridimg2 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+
+#crop {
+    height: 30% !important;
+    width: 70% !important;
+    overflow: hidden;
+}
+
 .graves2 {
     width: 100%;
-    height: auto;
+    height: 100%;
     content: url("images/graves.png");
     mix-blend-mode: exclusion;
     content-visibility: visible;
-    flex : 4;
+    object-fit: fill;
+    object-position: center;
 }
 
 .container {
