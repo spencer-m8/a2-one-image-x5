@@ -31,7 +31,6 @@ body {
 
 .textoverlap {
     display: grid;
-
     span {
         grid-area: 1 / 1;
         justify-self: center;
@@ -44,16 +43,44 @@ body {
 
 .title {
     font-family: Ballet;
-    font-size: 70px;
+    font-size: 90px;
     text-align: left;
-    padding-top: 10%;
+    padding-top: var(--padding);
+}
+.title2 {
+    transform: translate(-4ch, 3ch) !important;
+    color: red; 
+    font-family: Ballet; 
+    font-size: 90px;
+    text-align: left;
+}
+.title3 {
+    transform: translate(-4ch, 4ch) !important;
+    color: green;
+    font-family: Ballet;
+    font-size: 90px;
+    text-align: left;
+}
+
+.title4 {
+    transform: translate(-4ch, 5ch) !important;
+    color: blue;
+    font-family: Ballet;
+    font-size: 90px;
+    text-align: left;
+}
+.title5 {
+    transform: translate(-4ch, 6ch) !important;
+    color: purple;
+    font-family: Ballet;
+    font-size: 90px;
+    text-align: left;
 }
 
 .subtitle {
     font-family: 'Times New Roman', Times, serif;
     font-size: 90px;
     color: rgb(129, 89, 89);
-    mix-blend-mode: darken;
     mix-blend-mode: color-burn;
     text-align: left;
     padding-top: var(--padding);
