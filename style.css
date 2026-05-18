@@ -96,6 +96,8 @@ body {
     margin: 100px 0 0 0;
 }
 
+/*adding this constrained the image to the div (the larger background image) and meant that the blurred version and the normal version were overlayed and it looked cool! not what I was going for but keeping it*/
+
 .grave1box img {
     width: 100%;
     height: auto;
