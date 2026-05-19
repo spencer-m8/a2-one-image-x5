@@ -331,6 +331,8 @@ body {
 .assignmentText {   
     flex : 10
 } */
+
+/* these make the different clip circle animations */
 @keyframes cutinto {
     0% {
         clip-path: circle(0%);
@@ -373,12 +375,16 @@ body {
     }
 }
 
+
+/*overall flexbox*/
 .graves5box {
     width: 100%;
     display: flex;
     max-width: 1200px;
     box-sizing: border-box;
 }
+
+/* these are the different elements in the bottom flexbox */
 
 .graves5 {
     flex: 1;
@@ -394,16 +400,23 @@ body {
 .graves53 {
     flex: 1;
     min-width: 0;
-    mix-blend-mode: color-burn;
     animation: cutinto2 3s linear infinite;
 }
 .graves54 {
     flex: 1;
     min-width: 0;
-    mix-blend-mode: exclusion;
     animation: cutinto3 2s linear infinite;
 }
 
+#exclude {
+    mix-blend-mode: exclusion;
+}
+
+#burn {
+    mix-blend-mode: color-burn;
+}
+
+/*this just crops the image*/
 .graves5box img {
     margin: 800px 0px 0px -1200px;
     padding: 0px;
