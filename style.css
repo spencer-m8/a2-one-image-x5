@@ -408,10 +408,13 @@ body {
     animation: cutinto3 2s linear infinite;
 }
 
+
+/*used honestly because I forgot about these1!!!*/
 #exclude {
     mix-blend-mode: exclusion;
 }
 
+/* different mix-blend-modes for different elements assigned in the html file instead of here*/
 #burn {
     mix-blend-mode: color-burn;
 }
@@ -421,6 +424,9 @@ body {
     margin: 800px 0px 0px -1200px;
     padding: 0px;
 }
+
+
+/* i had a comment here saying how I didn't like this this I'm preserving this */
 
 .divider {
     height: 200px; }
