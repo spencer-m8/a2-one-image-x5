@@ -150,13 +150,14 @@ body {
 @keyframes fliparound {
     100% {
         transform: scaleX(-1);
-    } 75% {
+    } 15% {
         transform: scale(1);
-    } 50% {
+    } 30% {
         transform: scale(-1);
-    } 25% {
+    } 35% {
         transform: scale(1);
     } 0% {
+
     }
         
 }
@@ -315,7 +316,7 @@ body {
     content-visibility: visible;
     object-fit: fill;
     object-position: center;   
-    filter: url(/filters.svg#filter)
+    filter: url(/filters.svg#filter);
 }
 
 /*container that gets reused a bunch, just half the width of the screen*/
@@ -330,6 +331,83 @@ body {
 .assignmentText {   
     flex : 10
 } */
+@keyframes cutinto {
+    0% {
+        clip-path: circle(0%);
+    } 20% {
+        clip-path: circle(0%);
+    } 24% {
+        clip-path: circle(100%);
+    } 34% {
+        clip-path: circle(0%);
+    } 100% {
+        clip-path: circle(0%);
+    }
+}
+
+@keyframes cutinto2 {
+    0% {
+        clip-path: circle(0%);
+    } 57% {
+        clip-path: circle(0%);
+    } 80% {
+        clip-path: circle(100%);
+    } 90% {
+        clip-path: circle(0%);
+    } 100% {
+        clip-path: circle(0%);
+    }
+}
+
+@keyframes cutinto3 {
+    0% {
+        clip-path: circle(0%);
+    } 70% {
+        clip-path: circle(0%);
+    } 74% {
+        clip-path: circle(100%);
+    } 80% {
+        clip-path: circle(0%);
+    } 100% {
+        clip-path: circle(0%);
+    }
+}
+
+.graves5box {
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.graves5 {
+    flex: 1;
+    min-width: 0;
+    animation: cutinto 2s linear infinite;
+}
+.graves52 {
+    flex: 1;
+    min-width: 0;
+    bleed: 50%;
+    animation: cutinto2 2s linear infinite;
+}
+.graves53 {
+    flex: 1;
+    min-width: 0;
+    mix-blend-mode: color-burn;
+    animation: cutinto2 3s linear infinite;
+}
+.graves54 {
+    flex: 1;
+    min-width: 0;
+    mix-blend-mode: exclusion;
+    animation: cutinto3 2s linear infinite;
+}
+
+.graves5box img {
+    margin: 800px 0px 0px -1200px;
+    padding: 0px;
+}
 
 .divider {
     height: 200px; }
