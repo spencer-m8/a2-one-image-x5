@@ -109,6 +109,19 @@ body {
     overflow: hidden;
 }
 
+.graves2crop {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.graves2crop img {
+    width:100%;
+    height: 600px;
+    margin: -70px 100px 100px 500px;
+    mix-blend-mode: exclusion;
+}
+
 .graves2 {
     width: 100%;
     height: 100%;
