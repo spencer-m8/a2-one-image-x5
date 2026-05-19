@@ -177,21 +177,30 @@ body {
 
 .graves4box {
     width: 100%;
-    height: auto;
-    object-position: center;
+    height: 100%;
 }
 
 .graves4box img {
     width: 50%;
-    height: auto;
-    object-position: center;
-    margin-left: auto;
-    margin-right: auto;
+    height: 200px;
     transition: transform 2s ease-in-out;
+    border-radius: 50%;
+}
+
+.graves4box + hidden {
+    display:block;
 }
 
 .graves4box img:hover {
     transform: rotate(1080deg);
+}
+
+#hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
 }
 
 .graves3 {
