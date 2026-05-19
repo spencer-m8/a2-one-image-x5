@@ -391,23 +391,25 @@ body {
     min-width: 0;
     animation: cutinto 2s linear infinite;
 }
+
 .graves52 {
     flex: 1;
     min-width: 0;
     bleed: 50%;
     animation: cutinto2 2s linear infinite;
 }
+
 .graves53 {
     flex: 1;
     min-width: 0;
     animation: cutinto2 3s linear infinite;
 }
+
 .graves54 {
     flex: 1;
     min-width: 0;
     animation: cutinto3 2s linear infinite;
 }
-
 
 /*used honestly because I forgot about these1!!!*/
 #exclude {
