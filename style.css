@@ -164,31 +164,34 @@ body {
 .gridimg2 {
     display: grid;
     grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr;
     height: 50%;
 }
 
-
+/* did not use this */
 #crop {
     height: 200px !important;
     width: 70% !important;
     overflow: hidden;
 }
 
+/*the wrapper for graves2 */
 .graves2crop {
     width: 100%;
     height: 300px;
     overflow: hidden;
 }
 
-
-
+/*left image*/
 .graves2crop img {
     width:100%;
     height: 600px;
     margin: --grave2leftoffset 100px 100px 500px;
     mix-blend-mode: exclusion;
+    
 }
 
+/*right image*/
 .graves2 {
     width: 100%;
     height: 100%;
@@ -199,6 +202,7 @@ body {
     object-position: center;
 }
 
+/*container for the 3rd graves*/
 .graves3box {
     position: relative;
     top: 0;
@@ -208,12 +212,16 @@ body {
     height: auto;
 }
 
+
+/*img wrapper*/
 .graves3box img {
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: center;
 }
+
+/*simple container for the fourth image*/
 
 .graves4box {
     width: 100%;
@@ -222,12 +230,18 @@ body {
 
 .graves4box img {
     width: 50%;
+    /*height stretch, not auto*/
     height: 1000px;
+    /*all animations are stacked */
     transition: transform 2s ease-in-out, transform 5s ease-in-out;
+    /* make it round */
     border-radius: 50%;
+    /*style */
     mix-blend-mode: exclusion;
 }
 
+
+/*below are all the animations */
 @keyframes antiblur {
     from {
         filter: blur(40px)
@@ -271,16 +285,20 @@ body {
     }
 }
 
-@keyframes makeblue {
+@keyframes makeblue { /*doesn't make it blue*/
+    /* just blends the colour in the background */
     100% {
         mix-blend-mode: color;
     }
 }
 
+/*on hover they get activated*/
 .graves4box img:hover {
     animation: antiblur 5s, colourchange 1s, spin 2s, big 10s, makeblue 3s;
 }
 
+
+/*hidden tag from when I was trying to show a bunch of other frames
 #hidden {
     display: none;
 }
@@ -288,6 +306,7 @@ body {
 .hidden {
     display: none;
 }
+    */
 
 .graves3 {
     width: 100%;
@@ -299,6 +318,7 @@ body {
     filter: url(/filters.svg#filter)
 }
 
+/*container that gets reused a bunch, just half the width of the screen*/
 .container {
     width: 50%;
     height: auto;
@@ -306,9 +326,10 @@ body {
     object-position: center;
 }
 
+/*unused flexbox
 .assignmentText {   
     flex : 10
-}
+} */
 
 .divider {
     height: 200px; }
