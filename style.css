@@ -3,10 +3,13 @@
     --grave2leftoffset: 0px
 }
 
+
+/* initial image container, only used for the first image 
 .images img {
     width: 50px;
     height: auto;
 }
+
 
 .images {
     width : 500px;
@@ -15,6 +18,9 @@
     padding-right: var(--padding);
 }
 
+*/
+
+/* body tag with a background image in it, if you can't see it try switching browsers! firefox did not work, chrome did */
 body {
     background-image: url("images/treee.png");
     /* there's no background-opacity property but this is a combo that works https://blog.jim-nielsen.com/2025/background-image-opacity-css/ */
@@ -24,17 +30,21 @@ body {
     background-size: 100%;
 }
 
+
+/*importing this to make an emo website */
 @font-face {
     font-family: Ballet;
     src: url(Ballet/Ballet-Regular-VariableFont_opsz.ttf); 
 }
 
 
+/*text overlap overlaps the top oneimage5x and the css :) */
 .textoverlap {
     display: grid;
     span {
         grid-area: 1 / 1;
         justify-self: center;
+        /*translate the child and this one into the same space */
         translate: 2ch;
         &:first-child {
             translate: -2ch;
@@ -42,12 +52,17 @@ body {
     }
 }
 
+/* title is the first line */
+
 .title {
     font-family: Ballet;
     font-size: 90px;
     text-align: left;
     padding-top: var(--padding);
 }
+
+/*subsequent, all are translated */
+
 .title2 {
     transform: translate(-4ch, 3ch) !important;
     color: red; 
@@ -78,6 +93,8 @@ body {
     text-align: left;
 }
 
+/* CSS :) part */
+
 .subtitle {
     font-family: 'Times New Roman', Times, serif;
     font-size: 90px;
@@ -87,6 +104,7 @@ body {
     padding-top: var(--padding);
 }
 
+/* holder for the first image */
 .grave1box {
     position: relative;
     top: 0;
@@ -106,6 +124,7 @@ body {
     object-position: center;
 }
 
+/* absolute position to overlap the two images */
 .top {
     position: absolute;
     top: 0;
@@ -114,23 +133,32 @@ body {
     filter: blur(8px);
 }
 
+/* image on top */
 .graves1 {
     width: 100%;
     height: auto;
     content: url("images/graves.png");
     mix-blend-mode: exclusion;
     /* https://stackoverflow.com/questions/11516291/css-get-height-of-screen-resolution */
-
     content-visibility: visible;
     flex : 4;
+    /*animation to spin around is included in the div here */
     animation: fliparound 2s ease-in-out infinite;
+
 }
 
 @keyframes fliparound {
     100% {
         transform: scaleX(-1);
+    } 75% {
+        transform: scale(1);
+    } 50% {
+        transform: scale(-1);
+    } 25% {
+        transform: scale(1);
+    } 0% {
     }
-    
+        
 }
 
 .gridimg2 {
