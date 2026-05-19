@@ -187,12 +187,39 @@ body {
     border-radius: 50%;
 }
 
-@keyframes colorchange {
+@keyframes antiblur {
     from {
         filter: blur(40px)
     }
     to {
-        filter: hue-rotate(360deg)
+        filter: blur(2px)
+    }
+}
+
+@keyframes colourchange {
+    from {
+        filter: saturate(1)
+    }
+    to {
+        filter: saturate(200)
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(18000deg);
+    }
+}
+
+@keyframes big{
+    100% {
+        transform: scale(10000%)
+    }
+}
+
+@keyframes makeblue {
+    100% {
+        mix-blend-mode: color;
     }
 }
 
@@ -201,8 +228,7 @@ body {
 }
 
 .graves4box img:hover {
-    transform: scale(2000000%);
-    animation: colorchange 5s linear infinite;
+    animation: antiblur 5s, colourchange 1s, spin 2s, big 2s, makeblue 3s;
 }
 
 #hidden {
