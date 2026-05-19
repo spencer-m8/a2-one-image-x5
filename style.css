@@ -122,6 +122,14 @@ body {
 
     content-visibility: visible;
     flex : 4;
+    animation: fliparound 2s ease-in-out infinite;
+}
+
+@keyframes fliparound {
+    100% {
+        transform: scaleX(-1);
+    }
+    
 }
 
 .gridimg2 {
@@ -182,9 +190,10 @@ body {
 
 .graves4box img {
     width: 50%;
-    height: 300px;
+    height: 1000px;
     transition: transform 2s ease-in-out, transform 5s ease-in-out;
     border-radius: 50%;
+    mix-blend-mode: exclusion;
 }
 
 @keyframes antiblur {
@@ -221,10 +230,6 @@ body {
     100% {
         mix-blend-mode: color;
     }
-}
-
-.graves4box + hidden {
-    display:block;
 }
 
 .graves4box img:hover {
