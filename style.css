@@ -216,13 +216,18 @@ body {
 
 @keyframes spin {
     100% {
-        transform: rotate(18000deg);
+        transform: rotate(1800000deg);
     }
 }
 
 @keyframes big{
+    0% {
+        transform: scale(1);
+    } 4% {
+        transform: scale(10000%);
+    }
     100% {
-        transform: scale(10000%)
+        transform: scale(10500%);
     }
 }
 
@@ -233,7 +238,7 @@ body {
 }
 
 .graves4box img:hover {
-    animation: antiblur 5s, colourchange 1s, spin 2s, big 2s, makeblue 3s;
+    animation: antiblur 5s, colourchange 1s, spin 2s, big 10s, makeblue 3s;
 }
 
 #hidden {
