@@ -182,9 +182,18 @@ body {
 
 .graves4box img {
     width: 50%;
-    height: 200px;
-    transition: transform 2s ease-in-out;
+    height: 300px;
+    transition: transform 2s ease-in-out, transform 5s ease-in-out;
     border-radius: 50%;
+}
+
+@keyframes colorchange {
+    from {
+        filter: blur(40px)
+    }
+    to {
+        filter: hue-rotate(360deg)
+    }
 }
 
 .graves4box + hidden {
@@ -192,7 +201,8 @@ body {
 }
 
 .graves4box img:hover {
-    transform: rotate(1080deg);
+    transform: scale(2000000%);
+    animation: colorchange 5s linear infinite;
 }
 
 #hidden {
