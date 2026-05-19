@@ -98,10 +98,17 @@
         </p>
     </div>
 
-   
+    <!--look at me using code that I don't understand! really unsure why I have to wrap this whole thing in an svg tag, i understand why the filter is its own seperate thing but why am I referencing w3 as well??-->
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <filter id="filter" color-interpolation-filters="linearRGB" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse">
+	<feDisplacementMap in="SourceGraphic" in2="morphology1" scale="53" xChannelSelector="A" yChannelSelector="G" x="0%" y="2%" width="100%" height="100%" result="displacementMap"/>
+	<feMorphology operator="erode" radius="0 3" x="0%" y="0%" width="100%" height="100%" in="turbulence" result="morphology1"/>
+</filter>
+      </svg>
+
     <div class="container">
         <div class="graves3box">
-            <div class="graves3"></div>
+            <img src="images/graves.png" style="filter: url(#filter) !important;">
         </div>
     </div>
 
