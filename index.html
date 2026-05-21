@@ -102,21 +102,24 @@
     </div>
 
     <!--look at me using code that I don't understand! really unsure why I have to wrap this whole thing in an svg tag, i understand why the filter is its own seperate thing but why am I referencing w3 as well??-->
-    <svg xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <filter id="filter" color-interpolation-filters="linearRGB" filterUnits="objectBoundingBox"
-                primitiveUnits="userSpaceOnUse">
-                <feDisplacementMap id="deltaMap" in="SourceGraphic" in2="morphology1" scale="82" xChannelSelector="G"
-                    yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" result="displacementMap1" />
-                <feMorphology operator="erode" radius="3 3" x="0%" y="0%" width="100%" height="100%"
-                    in="displacementMap1" result="morphology2" />
-            </filter>
-        </defs>
-        <!--this is the animate property that links to the property in the filter to change the scale over time, it should be the whole image being impacted, but this changes browser to browser-->
-        <animate xlink:href="#deltaMap" attributeName="scale" from="10" to="100" dur="3s" begin="0s"
-            repeatCount="indefinite" />
+    <div style="width: 10px !important; height: auto !important">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="filter" color-interpolation-filters="linearRGB" filterUnits="objectBoundingBox"
+                    primitiveUnits="userSpaceOnUse">
+                    <feDisplacementMap id="deltaMap" in="SourceGraphic" in2="morphology1" scale="82"
+                        xChannelSelector="G" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%"
+                        result="displacementMap1" />
+                    <feMorphology operator="erode" radius="3 3" x="0%" y="0%" width="100%" height="100%"
+                        in="displacementMap1" result="morphology2" />
+                </filter>
+            </defs>
+            <!--this is the animate property that links to the property in the filter to change the scale over time, it should be the whole image being impacted, but this changes browser to browser-->
+            <animate xlink:href="#deltaMap" attributeName="scale" from="10" to="100" dur="3s" begin="0s"
+                repeatCount="indefinite" />
 
-    </svg>
+        </svg>
+    </div>
 
     <div class="description">
         <p>
@@ -128,9 +131,10 @@
             hope this renders ok
             <br><br>
             try this with as many different browsers as you'd like, each one renders svg animations different<br>
-            
-            "unexpected and abnormal mode of operandi, a break from (one of) the many flows (of expectations) within a technological system."
-            </p>
+
+            "unexpected and abnormal mode of operandi, a break from (one of) the many flows (of expectations) within a
+            technological system."
+        </p>
     </div>
 
     <!--container for the 3rd images-->
@@ -149,16 +153,22 @@
             hover over it & then scroll <br><br>
             this one is more <br><br>
 
-            this is more of a personal experience, something between my own input and the input of the computer in a way at least. hope it's not completely expected,<br>
-        
-            i started to try to do away with it entirely, living as an inversion of it, thus continuing to refer to it indirectly <br>
+            this is more of a personal experience, something between my own input and the input of the computer in a way
+            at least. hope it's not completely expected,<br>
+
+            i started to try to do away with it entirely, living as an inversion of it, thus continuing to refer to it
+            indirectly <br>
 
             so this is just some of the straightforward transforms for fun :)
 
-            “Theorists have also been confronted with this problem. For them, terms like post-digital or post-media aesthetics frequently offer a solution. Unfortunately, these kinds of terms seem to be misleading because in glitch art ‘post’ actually often means a reaction to a primer form. But to act against something does not mean to move away from it completely - in fact a reaction also prolongs a certain way or mode (at least as a reference)”
+            “Theorists have also been confronted with this problem. For them, terms like post-digital or post-media
+            aesthetics frequently offer a solution. Unfortunately, these kinds of terms seem to be misleading because in
+            glitch art ‘post’ actually often means a reaction to a primer form. But to act against something does not
+            mean to move away from it completely - in fact a reaction also prolongs a certain way or mode (at least as a
+            reference)”
         </p>
-            
-            
+
+
     </div>
     <div class="graves4box">
         <img src="images/graves.png">
@@ -169,21 +179,23 @@
         <p>
             &lt;!----this is image 5----&gt;
             this one is like taking all the preset recipes i've liked in the other images and put it on one
-            but its still not up to me entirely 
+            but its still not up to me entirely
 
-            I wanted to reference the idea of something that goes past the medium its on, i remember getting excited as a kid seeing full page consuming animations on websites before full-screen browser games were big I would have liked this. it takes up everything will change a bunch
+            I wanted to reference the idea of something that goes past the medium its on, i remember getting excited as
+            a kid seeing full page consuming animations on websites before full-screen browser games were big I would
+            have liked this. it takes up everything will change a bunch
 
             "I only see one
-aspect of the actual machine. I have learned to ignore the
-interface and all structural components"
+            aspect of the actual machine. I have learned to ignore the
+            interface and all structural components"
         </p>
     </div>
-    
+
     <div class="graves5box">
         <div class="graves5">
             <img src="images/graves.png">
         </div>
-        <div class="graves52"id="burn">
+        <div class="graves52" id="burn">
             <img src="images/graves.png" style="margin: 10px 0px 0px -100px">
         </div>
         <div class="graves53">
@@ -193,7 +205,7 @@ interface and all structural components"
             <img src="images/graves.png">
         </div>
     </div>
-    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
